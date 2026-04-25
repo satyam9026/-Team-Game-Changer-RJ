@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,16 +15,13 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=3071712193018793&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Game Changer RJ | Loss Recovery</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -48,14 +44,15 @@ src="https://www.facebook.com/tr?id=3071712193018793&ev=PageView&noscript=1"
             text-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
         }
 
-        .money-gradient {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        /* Ek hi line mein rakhne ke liye whitespace-nowrap */
+        .single-line-heading {
+            white-space: nowrap;
         }
 
         .btn-telegram {
             background: linear-gradient(90deg, #0088cc, #00aaff);
             box-shadow: 0 10px 20px rgba(0, 136, 204, 0.3);
-            transition: all 0.3s transform ease;
+            transition: all 0.3s ease;
         }
 
         .btn-telegram:hover {
@@ -63,7 +60,6 @@ src="https://www.facebook.com/tr?id=3071712193018793&ev=PageView&noscript=1"
             box-shadow: 0 15px 30px rgba(0, 136, 204, 0.5);
         }
 
-        /* Money Rain Animation */
         .money-rain {
             position: absolute;
             top: -10%;
@@ -84,43 +80,27 @@ src="https://www.facebook.com/tr?id=3071712193018793&ev=PageView&noscript=1"
 
 <body class="flex flex-col items-center justify-center min-h-screen p-4">
 
-    <div class="relative z-10 w-full max-w-2xl text-center space-y-8">
+    <div class="relative z-10 w-full max-w-2xl text-center space-y-6">
 
-        <div class="space-y-2 uppercase">
-            <h3
-                class="flex items-center justify-center gap-2 text-xl md:text-2xl font-bold text-[#2ecc71] tracking-wide">
-                <i class="fas fa-money-bill-wave"></i>
-                All Platform Loss Recover
-            </h3>
-            <h1 class="heading-font text-4xl md:text-6xl font-black text-white glow-text">
-                Best Prediction
-            </h1>
-            <h2
-                class="text-lg md:text-2xl font-semibold tracking-widest text-[#ffcc00] flex items-center justify-center gap-3">
-                <i class="fas fa-crown"></i>
-
-                Team challenger RJ
-                <i class="fas fa-money-bill-wave"></i>
-            </h2>
+        <div class="relative group mx-auto max-w-[200px] md:max-w-[250px]">
+            <div class="absolute -inset-1 bg-gradient-to-r from-yellow-600 to-green-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+            <div class="relative bg-[#111] p-1.5 rounded-2xl border border-white/10 shadow-2xl">
+                <img src="image.png" alt="Team Logo" class="w-full h-auto rounded-xl">
+            </div>
         </div>
 
-        <div class="py-4">
+        <div class="uppercase overflow-hidden px-2">
+            <h1 class="heading-font text-2xl sm:text-4xl md:text-6xl font-black text-white glow-text single-line-heading">
+                Team challenger RJ
+            </h1>
+        </div>
+
+        <div class="pt-2">
             <a href="https://t.me/+YjzARA9vmZNhMDJl" target="_blank"
-                class="btn-telegram inline-flex items-center gap-4 px-12 py-5 rounded-full text-2xl md:text-3xl font-bold text-white uppercase tracking-tighter">
+                class="btn-telegram inline-flex items-center gap-3 px-8 py-4 md:px-12 md:py-5 rounded-full text-xl md:text-3xl font-bold text-white uppercase tracking-tighter">
                 <i class="fab fa-telegram"></i>
                 Join Telegram
             </a>
-        </div>
-
-        <div class="relative group mx-auto max-w-sm md:max-w-md">
-            <div
-                class="absolute -inset-1 bg-gradient-to-r from-yellow-600 to-green-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000">
-            </div>
-
-            <div class="relative bg-[#111] p-2 rounded-2xl border border-white/10 shadow-2xl">
-                <img src="image.png" alt="Vipin Singh Money" class="w-full h-auto rounded-xl">
-            </div>
-
         </div>
 
     </div>
@@ -142,10 +122,8 @@ src="https://www.facebook.com/tr?id=3071712193018793&ev=PageView&noscript=1"
             }, 5000);
         }
 
-        // Create a bill every 300ms
         setInterval(createMoney, 300);
     </script>
 
 </body>
-
 </html>
